@@ -19,9 +19,4 @@ describe('Contact form is rendering' , () => {
         const { getByTestId } = render(<ContactForm />)
         expect(getByTestId('h1tag')).toHaveTextContent('Contact me')
     });
-
-    it('renders', () => {
-        const { getByTestId } = render(<ContactForm />)
-        expect(getByTestId('submit-btn')).toHaveTextContent('Submit')
-    });
 });
